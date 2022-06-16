@@ -4,6 +4,6 @@ This projects is about creating a function that, allows to read a line ending wi
 
 ### Compile
  
-  `gcc -Wall -Wextra -Werror -D BUFFER_SIZE=32 get_next_line.c get_next_line_utils.c`
+  `gcc -Wall -Wextra -Werror -D BUFFER_SIZE=32 *.c`
   
   Flags "-D" -> # define 
