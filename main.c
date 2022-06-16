@@ -19,19 +19,13 @@ int	main(void)
 	int		res;
 	int		i = 1;
 
+	//need to add your path to test.txt
 	fd = open("/Users/qrolande/Desktop/gnl/test.txt", O_RDONLY);
 	while ((res = get_next_line(fd, &line)) > 0)
 	{
 		printf("%2d) res = %d |%s|\n", i, res, line);
-	//	free(line);
 		i++;
 	}
-	
 	printf("%2d) res = %d |%s|\n", i, res, line);
-	//free(line);
-
-	// while (1)
-	// 	;
-
 	return (0);
 }
